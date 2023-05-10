@@ -18,7 +18,7 @@ export default function Home() {
       <div className = "body">
         <div className = "featuredPanel">
           <img src='/placeholder.png' className='featuredPicture'></img>
-          <div></div>{featuredMovieTitle}
+          <div className = "featuredTitle"> {featuredMovieTitle} </div>
         </div>
       </div>
       <footer>
