@@ -1,0 +1,18 @@
+.titlePic {
+	width:100%;
+}
+
+.reviewContainer {
+	width: 70%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.statsContainer {
+	width: 30%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	background-color: grey;
+}

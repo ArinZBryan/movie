@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import './styles.css'
+import { WebHeader } from '@/components/header';
+
 
 export default function Home() {
 
@@ -8,17 +10,14 @@ export default function Home() {
   return (
     <main>
       <title>Movie Reviews</title>
-      <div className="header">
-        <h1 id = "headername">Movie Reviews</h1>
-        <div className='buttonarray'> 
-          <a href = "/movies/mov1"><button>See All Movies</button></a>
-          <a href = "/movies/mov1"><button>See All Actors</button></a>
-        </div>
-      </div>
+      <WebHeader/>
       <div className = "body">
         <div className = "featuredPanel">
           <img src='/placeholder.png' className='featuredPicture'></img>
           <div className = "featuredTitle"> {featuredMovieTitle} </div>
+        </div>
+        <div className= "recentReviews">
+          
         </div>
       </div>
       <footer>
