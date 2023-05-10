@@ -16,6 +16,7 @@ function ReviewContainer({reviews} : {reviews: string[][]}) {
 
 export default function Home() {
 
+	
   	const featuredMovieTitle = "Title";
 	const reviews = [["Title1", "Decription1"],["Title2", "Decription2"],["Title3", "Decription3"]]
 
