@@ -1,5 +1,6 @@
 .titlePic {
-	width:100%;
+	width:auto;
+	max-height: 10%;
 }
 
 .reviewContainer {
@@ -14,5 +15,17 @@
 	height: auto;
 	display: flex;
 	flex-direction: column;
+	background-color: darkgrey;
+}
+
+.review {
+	padding-left: 2rem;
+	padding-bottom: 0.5rem;
+	background-color: lightgrey;
+	color: black;
+}
+
+.review:nth-child(odd) {
 	background-color: grey;
+	color: white;
 }

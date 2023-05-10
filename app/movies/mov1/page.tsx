@@ -16,13 +16,22 @@ function ReviewContainer({reviews} : {reviews: string[][]}) {
 
 export default function Home() {
 
-	
+
   	const featuredMovieTitle = "Title";
 	const reviews = [["Title1", "Decription1"],["Title2", "Decription2"],["Title3", "Decription3"]]
+	const statistics = [["Rating", "5/5"],["Rating", "5/5"],["Rating", "5/5"]]
 
-	const elems = [];
+	const review = [];
 	for (var i = 0; i < reviews.length; i++) {
-		elems.push(<MovieReview title ={reviews[i][0]} text={reviews[i][1]}/>)
+		review.push(<MovieReview title ={reviews[i][0]} text={reviews[i][1]}/>)
+	}
+
+	const stat = [];
+	for (var i = 0; i < statistics.length; i++) {
+		stat.push(
+		<div className = "stats">
+			<h1>Rating</h1>
+		</div>)
 	}
 
   	return (
@@ -30,20 +39,15 @@ export default function Home() {
 			<title>Movie Reviews</title>
 			<WebHeader/>
 			<div className = "body" style = {{marginTop: '13vh'}}>
-				<div className='TitlePic'>
-					<img src='/placeholder.png' className='featuredPicture' style = {{width:'100%'}}></img>
-				</div>
 				<div style = {{display: 'flex', flexDirection: 'row'}}>
-					<div className=''>
-						{elems}
+					<div className='reviewContainer'>
+						{review}
 					</div>
 					<div className = "statsContainer">
-						<div className = "stats">
-							<h1>Rating</h1>
+						<div className='TitlePic'>
+							<img src='/movie_poster.jpg' className='featuredPicture' style = {{width:'100%'}}></img>
 						</div>
-						<div className = "stats">
-							<h1>Rating</h1>
-						</div>
+						{stat}
 					</div>
 				</div>
 			</div>
