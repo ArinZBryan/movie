@@ -19,7 +19,7 @@
 }
 
 .actorsContainer {
-	width: 100%;
+	width: fit-content;
 	height: auto;
 	display: flex;
 	flex-direction: row;

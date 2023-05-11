@@ -18,7 +18,7 @@ function StatisticElement({title, text} : {title: string, text: string}){
 }
 
 function ActorPanelElement({name, role, roleImage} : {name: string, role: string, roleImage: string}) {
-	return <div style={{width:"25%", display: "flex", flexDirection:"column", alignItems:"center"}}>
+	return <div style={{width:"200px", display: "flex", flexDirection:"column", alignItems:"center"}}>
 		<img src={roleImage} className='actorPicture' style = {{width:"50%"}}></img>
 		<h1 style = {{fontSize:"x-large", textAlign:'center'}}>{name} as {role}</h1>
 	</div>
@@ -30,7 +30,13 @@ export default function Home() {
   	const featuredMovieTitle = "Title";
 	const reviews = [["Title1", "Decription1"],["Title2", "Decription2"],["Title3", "Decription3"]]
 	const statistics = [["Rating", "5/5"],["Rating", "5/5"],["Rating", "5/5"]]
-	const actors = [["Eddy Murphy", "Donkey", "/actor-EMurphy.jpg"],["Actor2", "Role2"],["Actor3", "Role3"]]
+	const actors = [
+		["Eddy Murphy", "Donkey", "/actor-EMurphy.jpg"],
+		["Mike Myers", "Shrek / Opening Narration", "/actor-MMyers.jpg"],
+		["Cameron Diaz", "Princess Fiona", "/actor-CDiaz.jpg"],
+		["John Lithgow", "Lord Farquaad", "/actor-JLithgow.jpg"],
+		["Conrad Vernon", "Gingerbread Man", "/actor-CVernon.jpg"]
+	]
 
 	const review = [];
 	for (var i = 0; i < reviews.length; i++) {
