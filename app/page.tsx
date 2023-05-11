@@ -1,28 +1,24 @@
 import Image from 'next/image'
 import './styles.css'
 import { WebHeader } from '@/components/header';
+import { WebFooter } from '@/components/footer';
 
 
 export default function Home() {
 
-  const featuredMovieTitle = "Title";
+  const featuredMovieTitle = "Shrek";
 
   return (
     <main>
       <title>Movie Reviews</title>
       <WebHeader/>
       <div className = "body">
-        <div className = "featuredPanel">
-          <img src='/placeholder.png' className='featuredPicture'></img>
-          <div className = "featuredTitle"> {featuredMovieTitle} </div>
-        </div>
+        <img src='/banner.jpg' className='featuredPicture'></img>
+        <div className = "featuredTitle"> {featuredMovieTitle} </div>
         <div className= "recentReviews">
-          
         </div>
       </div>
-      <footer>
-        Footer
-      </footer>
+      <WebFooter/>
     </main>
   )
 }

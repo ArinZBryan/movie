@@ -18,6 +18,14 @@
 	background-color: darkgrey;
 }
 
+.actorsContainer {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	background-color: darkgrey;
+}
+
 .review {
 	padding-left: 2rem;
 	padding-bottom: 0.5rem;
@@ -28,4 +36,10 @@
 .review:nth-child(odd) {
 	background-color: grey;
 	color: white;
+}
+
+.body {
+	padding-top: 18vh;
+	display: flex;
+	flex-direction: column;
 }
