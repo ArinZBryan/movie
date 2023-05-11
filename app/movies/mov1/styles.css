@@ -5,9 +5,11 @@
 
 .reviewContainer {
 	width: 70%;
-	height: auto;
+	height:65vh;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
+	overflow-y: scroll;
 }
 
 .statsContainer {
