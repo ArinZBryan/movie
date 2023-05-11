@@ -18,9 +18,9 @@ function StatisticElement({title, text} : {title: string, text: string}){
 }
 
 function ActorPanelElement({name, role, roleImage} : {name: string, role: string, roleImage: string}) {
-	return <div style={{width:"25%", display: "flex", flexDirection:"column", alignItems:"center"}}>
+	return <div style={{width:"25%", padding: "10px", display: "flex", flexDirection:"column", alignItems:"center"}}>
 		<img src={roleImage} className='actorPicture' style = {{width:"50%"}}></img>
-		<h1 style = {{fontSize:"x-large", textAlign:'center'}}>{name} as {role}</h1>
+		<h1 style = {{fontSize:"large", textAlign:'center'}}>{name} as {role}</h1>
 	</div>
 }
 
@@ -32,9 +32,16 @@ export default function Home() {
 		["Rotten Tomatoes", "Shrek is unashamed of its modern flourishes. At the same time, especially for young viewers, it works very well as a straightforward and quite funny fable. The animation, coordinated by directors Andrew Adamson and Vicky Jenson, is impressive. -Kathi Maio"],
 		["Andrew O'Hagan (Daily Telegraph UK)", "Here is a movie of the times, funny, enjoyable, perfect-looking, and altogether original in a way that might cause us to look again at the meaning of the word."],
 		["Chris Tookey (Daily Mail)", "Adults will find plenty to laugh at. Children will love it"],
-		
-]
-	const statistics = [["Rating", "4/5"],["Rating", "4/5"],["Rating", "5/5"]]
+		["Daily News", "An adorable, infectious work of true sophistication"],
+		["Chicago Sun Times", "This is not your average family cartoon. Shrek is jolly and wicked, filled with sly in-jokes and yet somehow possessing a heart"]
+	]
+	const statistics = [
+		["Metacritic", "4/5"],
+		["USA Today", "4/5"],
+		["Jami Bernard", "5/5"],
+		["Allison Rose", "4.5/5"],
+		["Jeff Black", "5/5"]
+	]
 	const actors = [
 		["Eddy Murphy", "Donkey", "/actors/EMurphy.jpg"],
 		["Mike Myers", "Shrek / Opening Narration", "/actors/MMyers.jpg"],
@@ -46,6 +53,19 @@ export default function Home() {
 		["Clive Pearse", "Ogre Hunter", "/actors/CPearse.jpg"],
 		["Jim Cummings", "Captain of Guards", "/actors/JCummings.jpg"],
 		["Bobby Block", "Baby Bear", "/actors/NoImage.jpg"],
+		["Chris Miller", "Geppetto / Magic Mirror", "/actors/CMiller.jpg"],
+		["Cody Cameron", "Pinocchio / Three Pigs", "/actors/CCameron.jpg"],
+		["Kathleen Freeman", "Old Woman", "/actors/KFreeman.jpg"],
+		["Michael Galasso", "Peter Pan", "/actors/NoImage.jpg"],
+		["Christoper Knights", "Blind Mouse", "/actors/NoImage.jpg"],
+		["Simon J. Smith", "Blind Mouse", "/actors/NoImage.jpg"],
+		["Jacquie Barnbrook", "Blind Mouse", "/actors/JBarnbrook.jpg"],
+		["Guillaume Aretos", "Merry Man", "/actors/NoImage.jpg"],
+		["John Bisom", "Merry Man", "/actors/NoImage.jpg"],
+		["Matthew Gonder", "Merry Man", "/actors/NoImage.jpg"],
+		["Calvin Remsberg", "Merry Man", "/actors/NoImage.jpg"],
+		["Jean-Paul Vignon", "Merry Man", "/actors/JPVignon.jpg"],
+		["Val Bettin", "Monsieur Hood", "/actors/VBettin.jpg"],
 	]
 
 	const review = [];
