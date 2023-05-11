@@ -38,7 +38,9 @@ export default function Home() {
 		["USA Today", "4/5"],
 		["Jami Bernard", "5/5"],
 		["Allison Rose", "4.5/5"],
-		["Jeff Black", "5/5"]
+		["Jeff Black", "5/5"],
+		["Florida Times-Union", "3.5/5"],
+		["Micheal Sragow, 3.5/5"]
 	]
 	const actors = [
 		["Eddy Murphy", "Donkey", "/actors/EMurphy.jpg"],
