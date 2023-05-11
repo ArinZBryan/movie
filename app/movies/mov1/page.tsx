@@ -28,14 +28,22 @@ export default function Home() {
 
 
   	const featuredMovieTitle = "Title";
-	const reviews = [["Title1", "Decription1"],["Title2", "Decription2"],["Title3", "Decription3"]]
+	const reviews = [
+		["Rotten Tomatoes", "Shrek is unashamed of its modern flourishes. At the same time, especially for young viewers, it works very well as a straightforward and quite funny fable. The animation, coordinated by directors Andrew Adamson and Vicky Jenson, is impressive. -Kathi Maio"],
+		["Andrew O'Hagan (Daily Telegraph UK)", "Here is a movie of the times, funny, enjoyable, perfect-looking, and altogether original in a way that might cause us to look again at the meaning of the word."],
+		["Chris Tookey (Daily Mail)", "Adults will find plenty to laugh at. Children will love it"]
+]
 	const statistics = [["Rating", "5/5"],["Rating", "5/5"],["Rating", "5/5"]]
 	const actors = [
 		["Eddy Murphy", "Donkey", "/actor-EMurphy.jpg"],
 		["Mike Myers", "Shrek / Opening Narration", "/actor-MMyers.jpg"],
 		["Cameron Diaz", "Princess Fiona", "/actor-CDiaz.jpg"],
 		["John Lithgow", "Lord Farquaad", "/actor-JLithgow.jpg"],
-		["Conrad Vernon", "Gingerbread Man", "/actor-CVernon.jpg"]
+		["Conrad Vernon", "Gingerbread Man", "/actor-CVernon.jpg"],
+		["Conrad Vernon", "Gingerbread Man", "/actor-CVernon.jpg"],
+		["Conrad Vernon", "Gingerbread Man", "/actor-CVernon.jpg"],
+		["Conrad Vernon", "Gingerbread Man", "/actor-CVernon.jpg"],
+		["Conrad Vernon", "Gingerbread Man", "/actor-CVernon.jpg"],
 	]
 
 	const review = [];
