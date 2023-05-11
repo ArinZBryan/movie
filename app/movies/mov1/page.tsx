@@ -87,7 +87,7 @@ export default function Home() {
 		<main>
 			<title>Movie Reviews</title>
 			<WebHeader/>
-			<div className = "body" style = {{paddingTop: '18vh', paddingBottom:'13vh'}}>
+			<div className = "body" style = {{paddingTop: '18vh', paddingBottom:'10vh'}}>
 				<div style = {{display: 'flex', flexDirection: 'row'}}>
 					<div className='reviewContainer'>
 						{review}
