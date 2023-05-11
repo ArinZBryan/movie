@@ -18,7 +18,7 @@ function StatisticElement({title, text} : {title: string, text: string}){
 }
 
 function ActorPanelElement({name, role, roleImage} : {name: string, role: string, roleImage: string}) {
-	return <div style={{width:"200px", display: "flex", flexDirection:"column", alignItems:"center"}}>
+	return <div style={{width:"25%", display: "flex", flexDirection:"column", alignItems:"center"}}>
 		<img src={roleImage} className='actorPicture' style = {{width:"50%"}}></img>
 		<h1 style = {{fontSize:"x-large", textAlign:'center'}}>{name} as {role}</h1>
 	</div>
@@ -31,19 +31,21 @@ export default function Home() {
 	const reviews = [
 		["Rotten Tomatoes", "Shrek is unashamed of its modern flourishes. At the same time, especially for young viewers, it works very well as a straightforward and quite funny fable. The animation, coordinated by directors Andrew Adamson and Vicky Jenson, is impressive. -Kathi Maio"],
 		["Andrew O'Hagan (Daily Telegraph UK)", "Here is a movie of the times, funny, enjoyable, perfect-looking, and altogether original in a way that might cause us to look again at the meaning of the word."],
-		["Chris Tookey (Daily Mail)", "Adults will find plenty to laugh at. Children will love it"]
+		["Chris Tookey (Daily Mail)", "Adults will find plenty to laugh at. Children will love it"],
+		
 ]
-	const statistics = [["Rating", "5/5"],["Rating", "5/5"],["Rating", "5/5"]]
+	const statistics = [["Rating", "4/5"],["Rating", "4/5"],["Rating", "5/5"]]
 	const actors = [
-		["Eddy Murphy", "Donkey", "/actor-EMurphy.jpg"],
-		["Mike Myers", "Shrek / Opening Narration", "/actor-MMyers.jpg"],
-		["Cameron Diaz", "Princess Fiona", "/actor-CDiaz.jpg"],
-		["John Lithgow", "Lord Farquaad", "/actor-JLithgow.jpg"],
-		["Conrad Vernon", "Gingerbread Man", "/actor-CVernon.jpg"],
-		["Conrad Vernon", "Gingerbread Man", "/actor-CVernon.jpg"],
-		["Conrad Vernon", "Gingerbread Man", "/actor-CVernon.jpg"],
-		["Conrad Vernon", "Gingerbread Man", "/actor-CVernon.jpg"],
-		["Conrad Vernon", "Gingerbread Man", "/actor-CVernon.jpg"],
+		["Eddy Murphy", "Donkey", "/actors/EMurphy.jpg"],
+		["Mike Myers", "Shrek / Opening Narration", "/actors/MMyers.jpg"],
+		["Cameron Diaz", "Princess Fiona", "/actors/CDiaz.jpg"],
+		["John Lithgow", "Lord Farquaad", "/actors/JLithgow.jpg"],
+		["Conrad Vernon", "Gingerbread Man", "/actors/CVernon.jpg"],
+		["Vincent Cassel", "Monsieur Hood", "/actors/VCassel.jpg"],
+		["Peter Dennis", "Ogre Hunter", "/actors/PDennis.jpg"],
+		["Clive Pearse", "Ogre Hunter", "/actors/CPearse.jpg"],
+		["Jim Cummings", "Captain of Guards", "/actors/JCummings.jpg"],
+		["Bobby Block", "Baby Bear", "/actors/NoImage.jpg"],
 	]
 
 	const review = [];
