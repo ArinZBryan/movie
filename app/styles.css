@@ -10,8 +10,8 @@ main {
 	display: block;
 	width: 100%;
 	height: fill-available;
-	transform: translateY(18vh)
-
+	transform: translateY(18vh);
+	background-color: grey;
 }
 
 .featuredPicture {
