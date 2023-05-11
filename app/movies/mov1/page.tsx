@@ -17,11 +17,10 @@ function StatisticElement({title, text} : {title: string, text: string}){
 	</div>
 }
 
-function ActorPanelElement() {
-	return <div className = "actorPanel">
-		<div className = "actorPic">
-			<img src='/actor.jpg' className='actorPicture' style = {{width:'100%'}}></img>
-		</div>
+function ActorPanelElement({name, role, roleImage} : {name: string, role: string, roleImage: string}) {
+	return <div style={{width:"25%", display: "flex", flexDirection:"column", alignItems:"center"}}>
+		<img src={roleImage} className='actorPicture' style = {{width:"50%"}}></img>
+		<h1 style = {{fontSize:"x-large", textAlign:'center'}}>{name} as {role}</h1>
 	</div>
 }
 
@@ -31,7 +30,7 @@ export default function Home() {
   	const featuredMovieTitle = "Title";
 	const reviews = [["Title1", "Decription1"],["Title2", "Decription2"],["Title3", "Decription3"]]
 	const statistics = [["Rating", "5/5"],["Rating", "5/5"],["Rating", "5/5"]]
-	const actors = [["Actor1", "Role1"],["Actor2", "Role2"],["Actor3", "Role3"]]
+	const actors = [["Eddy Murphy", "Donkey", "/actor-EMurphy.jpg"],["Actor2", "Role2"],["Actor3", "Role3"]]
 
 	const review = [];
 	for (var i = 0; i < reviews.length; i++) {
@@ -43,11 +42,16 @@ export default function Home() {
 		stat.push(<StatisticElement title ={statistics[i][0]} text={statistics[i][1]}/>)
 	}
 
+	const actor = [];
+	for (var i = 0; i < actors.length; i++) {
+		actor.push(<ActorPanelElement name = {actors[i][0]} role = {actors[i][1]} roleImage={actors[i][2]}/>)
+	}
+
   	return (
 		<main>
 			<title>Movie Reviews</title>
 			<WebHeader/>
-			<div className = "body" style = {{paddingTop: '18vh'}}>
+			<div className = "body" style = {{paddingTop: '18vh', paddingBottom:'13vh'}}>
 				<div style = {{display: 'flex', flexDirection: 'row'}}>
 					<div className='reviewContainer'>
 						{review}
@@ -60,7 +64,7 @@ export default function Home() {
 					</div>	
 				</div>
 				<div className = "actorsContainer">
-					{actors}
+					{actor}
 				</div>
 			</div>
 			<WebFooter/>
