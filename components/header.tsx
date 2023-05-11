@@ -5,7 +5,6 @@ export function WebHeader() {
 		</h1>
 		<div style = {{display: 'flex',	flexDirection: 'row', justifyContent: 'space-around'}}> 
 			<a href = "/movies/mov1"><button>See All Movies</button></a>
-			<a href = "/movies/mov1"><button>See All Actors</button></a>
 		</div>
 	</div>
   }

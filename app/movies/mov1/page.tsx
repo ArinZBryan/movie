@@ -25,7 +25,7 @@ function ActorPanelElement({name, role, roleImage} : {name: string, role: string
 export default function Home() {
 
 
-  	const featuredMovieTitle = "Title";
+  	const featuredMovieTitle = "Shrek";
 	const reviews = [
 		["Rotten Tomatoes", "Shrek is unashamed of its modern flourishes. At the same time, especially for young viewers, it works very well as a straightforward and quite funny fable. The animation, coordinated by directors Andrew Adamson and Vicky Jenson, is impressive. -Kathi Maio"],
 		["Andrew O'Hagan (Daily Telegraph UK)", "Here is a movie of the times, funny, enjoyable, perfect-looking, and altogether original in a way that might cause us to look again at the meaning of the word."],
