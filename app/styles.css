@@ -21,8 +21,11 @@ main {
 
 .featuredTitle {
 	transform: translateY(-3rem);
-	color: grey;
-	font-size: xx-large
+	color: #dddddd;
+	font-size: xx-large;
+	background-color: #222222aa;
+	width:15%;
+	padding-left:10px;
 }
 
 footer {
