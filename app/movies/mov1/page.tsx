@@ -12,9 +12,7 @@ function MovieReviewElement({ title, text } : { title: string, text: string }) :
 }
 
 function StatisticElement({title, text} : {title: string, text: string}){
-	return <div className = "stats">
-		<h1>{title} : {text}</h1>
-	</div>
+	return <div className = "stats">{title} : {text}</div>
 }
 
 function ActorPanelElement({name, role, roleImage} : {name: string, role: string, roleImage: string}) {

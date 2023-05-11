@@ -44,4 +44,5 @@
 	padding-top: 18vh;
 	display: flex;
 	flex-direction: column;
+	width: 100vw;
 }
