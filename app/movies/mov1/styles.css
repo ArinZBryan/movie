@@ -46,5 +46,5 @@
 	flex-direction: column;
 	width: 100vw;
 	background: rgb(0,13,38);
-	background: linear-gradient(233deg, rgba(0,13,38,1) 0%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(12deg, rgba(0,13,38,1) 0%, rgba(255,255,255,1) 100%);
 }
